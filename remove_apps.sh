@@ -8,5 +8,6 @@ heroku apps | while read -r line; do
     IFS=' ' read -r -a array <<< "$line"
     echo "${array[0]}"
     # heroku apps:destroy "${array[0]}" -c "${array[0]}"
+    # heroku apps:leave -a "${array[0]}"
   fi
 done
