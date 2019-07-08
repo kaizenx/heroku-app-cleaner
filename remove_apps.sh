@@ -3,7 +3,7 @@
 
 
 heroku apps | while read -r line; do
-  if [[ $line != *"supahands"* && $line != *"==="* ]] ; then
+  if [[ $line != *"appiwant"* && $line != *"==="* ]] ; then
     # echo "Processing $line"
     IFS=' ' read -r -a array <<< "$line"
     echo "${array[0]}"
